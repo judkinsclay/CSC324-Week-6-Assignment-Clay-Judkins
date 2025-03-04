@@ -3,10 +3,11 @@
 # **Java To-Do List Application**
 
 ## **Overview**
-This is a simple **To-Do List application** built in **Java**. It allows users to:
+This is a simple **To-Do List application** built in **Java**. It allows users to:  
 ✅ **Add tasks**  
 ✅ **View tasks**  
 ✅ **Remove tasks**  
+✅ **Complete tasks**  
 ✅ **Exit the application**  
 
 This project demonstrates **basic Java programming concepts**, including:
@@ -22,6 +23,7 @@ This project demonstrates **basic Java programming concepts**, including:
 - **Add Task:** Users can enter a new task to be added to the list.
 - **View Tasks:** Displays all current tasks in the list.
 - **Remove Task:** Users can delete a task by specifying its number.
+- **Complete Task:** Users can specify which task they would like to complete.
 - **Exit Program:** Safely exits the application.
 
 ---
