@@ -37,7 +37,8 @@ public class ToDoListApp {
                 case 1 -> addTask(scanner); // Call method to add a task
                 case 2 -> viewTasks(); // Call method to display tasks
                 case 3 -> removeTask(scanner); // Call method to remove a task
-                case 4 -> System.out.println("Exiting..."); // Exit message
+                case 4 -> completeTask(scanner);
+                case 5 -> System.out.println("Exiting..."); // Exit message
                 default -> System.out.println("Invalid choice. Try again."); // Handle invalid input
             }
         } while (choice != 4); // Loop until user selects option 4 (Exit)
@@ -56,6 +57,27 @@ public class ToDoListApp {
         System.out.println("Task added!"); // Confirmation message
     }
 
+    /**
+     * Method to set task completion status
+     */
+    private static void completeTask(Scanner scanner){
+        String tempTask;
+        viewTasks(); // Show current tasks before asking for input
+        if (tasks.isEmpty()) return; // If no tasks, exit method
+
+        System.out.print("Enter task number to complete: ");
+        int index = scanner.nextInt(); // Get task number from user
+
+        // Validate the task number before completing
+        if (index > 0 && index <= tasks.size()) {
+            tempTask = tasks.get(index);
+            tasks.remove(index - 1); // Remove task (index is 1-based, ArrayList is 0-based)
+            tasks.add("**"+tempTask); //** is the visual flag for completion. It also adds the task to the end of the list
+            System.out.println("Task completed."); // Confirmation message
+        } else {
+            System.out.println("Invalid task number."); // Handle invalid input
+        }
+    }
     /**
      * Method to display all tasks in the list.
      */
