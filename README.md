@@ -3,7 +3,7 @@
 # **Java To-Do List Application**
 
 ## **Overview**
-This is a simple **To-Do List application** built in **Java**. It allows users to:
+This is a simple **To-Do List application** built in **Java**. It allows users to:  
 ✅ **Add tasks**  
 ✅ **View tasks**  
 ✅ **Remove tasks**  
