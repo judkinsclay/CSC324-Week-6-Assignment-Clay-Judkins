@@ -5,9 +5,9 @@
 ## **Overview**
 This is a simple **To-Do List application** built in **Java**. It allows users to:
 ✅ **Add tasks**  
-✅ **View tasks**
-✅ **Remove tasks**
-✅ **Complete tasks**
+✅ **View tasks**  
+✅ **Remove tasks**  
+✅ **Complete tasks**  
 ✅ **Exit the application**  
 
 This project demonstrates **basic Java programming concepts**, including:
